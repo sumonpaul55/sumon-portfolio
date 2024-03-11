@@ -45,7 +45,7 @@ const Banner = () => {
                         </div>
                         <div className='flex justify-center md:w-1/2 md:p-20'>
                             <div className='flex items-center justify-center rounded-full' data-aos="fade-left">
-                                <img src={me} alt="sumon paul" className='border rounded-full p-1' />
+                                <img src={me} alt="sumon paul" className='border rounded-full p-2' />
                             </div>
                         </div>
                     </div>
