@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "HTML",
+        "img": "https://i.ibb.co/x685NGj/html.png",
+        "description": "Building the backbone of web content with semantic markup and structure."
+    },
+    {
+        "id": 2,
+        "name": "CSS",
+        "img": "https://i.ibb.co/MfMxzDg/css.png",
+        "description": "Styling and designing captivating user interfaces for a seamless web experience."
+    },
+    {
+        "id": 3,
+        "name": "JavaScript",
+        "img": "https://i.ibb.co/j8MDPmC/js.png",
+        "description": "Creating dynamic and interactive elements that breathe life into web applications."
+    },
+    {
+        "id": 4,
+        "name": "React",
+        "img": "https://i.ibb.co/SVYL8rd/react.png",
+        "description": "Crafting efficient and modular UI components for modern, responsive web applications."
+    },
+    {
+        "id": 5,
+        "name": "Next js",
+        "img": "https://i.ibb.co/5kfb4Fh/next-js.jpg",
+        "description": "Crafting efficient and modular UI components for modern, responsive web applications."
+    },
+    {
+        "id": 6,
+        "name": "Firebase",
+        "img": "https://i.ibb.co/QHn6vJ0/firebase.png",
+        "description": "Leveraging the power of Firebase for real-time databases and effortless app deployment."
+    },
+    {
+        "id": 7,
+        "name": "Tailwind",
+        "img": "https://i.ibb.co/FgTKqM5/tailwind.png",
+        "description": "Streamlining UI development with utility-first CSS framework for a sleek and consistent design."
+    },
+    {
+        "id": 8,
+        "name": "Bootstrap",
+        "img": "https://i.ibb.co/TRsv1Nv/bootstrap.png",
+        "description": "Harnessing the robustness of Bootstrap for rapid and responsive web development."
+    },
+    {
+        "id": 9,
+        "name": "Express",
+        "img": "https://i.ibb.co/wSVbFHY/express.png",
+        "description": "Building scalable and efficient server-side applications with the Express.js framework."
+    },
+    {
+        "id": 10,
+        "name": "MongoDB",
+        "img": "https://i.ibb.co/XYTcW0Q/mongodb.png",
+        "description": "Managing data seamlessly in NoSQL databases, enabling flexible and scalable solutions."
+    },
+    {
+        "id": 11,
+        "name": "Mongoose",
+        "img": "https://i.ibb.co/rMsBBwm/mongoose.png",
+        "description": "Managing data seamlessly in NoSQL databases, enabling flexible and scalable solutions."
+    },
+    {
+        "id": 12,
+        "name": "Git",
+        "img": "https://i.ibb.co/B3VqgW8/git.png",
+        "description": "Version control mastery for collaborative and organized development workflows."
+    },
+    {
+        "id": 13,
+        "name": "Tanstack query",
+        "img": "https://i.ibb.co/3ck7Wbv/tanstack.png",
+        "description": "TanStack Query is configurable down to each observer instance of a query with knobs and options to fit every use-case"
+    },
+    {
+        "id": 14,
+        "name": "Node js",
+        "img": "https://i.ibb.co/S3qs3Vy/nodejs.png",
+        "description": "TanStack Query is configurable down to each observer instance of a query with knobs and options to fit every use-case"
+    }
+]
