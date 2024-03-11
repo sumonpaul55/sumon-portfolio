@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Banner = () => {
     return (
-        <section className='bg-slate-800 text-white py-14 md:py-28'>
+        <section className='bg-slate-800 text-white py-14'>
             <Container>
                 <Box>
                     <div className='flex flex-col md:flex-row md:items-center gap-16 md:gap-5'>
@@ -45,7 +45,7 @@ const Banner = () => {
                         </div>
                         <div className='flex justify-center md:w-1/2 md:p-20'>
                             <div className='flex items-center justify-center rounded-full' data-aos="fade-left">
-                                <img src={me} alt="sumon paul" className='border rounded-full p-2' />
+                                <img src={me} alt="sumon paul" className='border rounded-full p-1 w-2/3' />
                             </div>
                         </div>
                     </div>
