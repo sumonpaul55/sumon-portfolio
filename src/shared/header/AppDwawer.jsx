@@ -14,7 +14,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 // import MailIcon from '@mui/icons-material/Mail';
 // import { Stack } from '@mui/material';
 // import FacebookIcon from '@mui/icons-material/Facebook';
@@ -22,23 +22,45 @@ import { Link } from 'react-router-dom';
 // import { GitHub, Instagram, LinkedIn } from '@mui/icons-material';
 // import "./navbar.css"
 import logo from "../../assets/logo.png"
+import useAuth from '../../hooks/useAuth';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
 const drawerWidth = 240;
-const navItems = ['Home', "contact", "Gellary", "login"];
+const navItems = ['Home', "contact", "Gellary"];
 
 function AppDwawer(props) {
-    // console.log(props)
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     };
+    // getting existing user
+    const { user, logOut } = useAuth()
+    const [btnToggle, setbtnToggle] = useState(true)
+    const navigate = useNavigate()
 
+
+
+
+    const handleUserBtn = () => {
+        setbtnToggle(!btnToggle)
+    }
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
-                <div className='px-3'>
-                    <img src={logo} alt="" />
+            <Typography variant="h6">
+                <div className='px-1 bg-slate-600 py-2 flex'>
+                    <img src={logo} alt="" className='max-w-[150px] h-auto' />
+                    <div className='inline pointer-events-none'>
+                        {
+                            user ? <Button sx={{ color: '#fff' }}>
+                                <img src={user?.photoURL} alt={user.displayName} className='w-10 rounded-full h-10' rel="no-referrer" />
+                            </Button> :
+                                <Button sx={{ color: '#fff' }}>
+                                    login
+                                </Button>
+                        }
+                    </div>
                 </div>
             </Typography>
             <Divider />
@@ -57,12 +79,24 @@ function AppDwawer(props) {
 
     const container = window !== undefined ? () => window().document.body : undefined;
 
+    // hadle logout
+    const handleLogout = () => {
+        logOut()
+            .then(() => {
+                toast.success("You Have Logged Out", {
+                    position: "bottom-right",
+                    delay: 1500
+                });
+                navigate("/")
+            })
+    }
+
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             <AppBar component="nav">
                 <div className="container mx-auto">
-                    <Toolbar style={{ minHeight: "auto", padding: "4px 10px" }}>
+                    <Toolbar style={{ minHeight: "auto", padding: "0 10px", justifyContent: "space-between" }}>
                         <IconButton
                             color="inherit"
                             aria-label="open drawer"
@@ -72,6 +106,23 @@ function AppDwawer(props) {
                         >
                             <MenuOpenIcon />
                         </IconButton>
+                        <div className='inline sm:hidden'>
+                            {
+                                user ? <div className='text-white group relative'>
+                                    <img src={user?.photoURL} alt={user.displayName} className='w-10 rounded-full h-10' rel="no-referrer" />
+                                    <div className={`absolute -right-0 top-12 bg-white group-hover:block hidden`}>
+                                        <Button sx={{ color: '#fff' }} className='whitespace-nowrap' style={{ color: "black", fontWeight: "bold" }} onClick={handleLogout} >
+                                            Log Out
+                                        </Button>
+                                    </div>
+                                </div> :
+                                    <Link to="/login">
+                                        <Button sx={{ color: '#fff' }}>
+                                            login
+                                        </Button>
+                                    </Link>
+                            }
+                        </div>
                         <Typography
                             variant="h6"
                             component="h3"
@@ -89,6 +140,23 @@ function AppDwawer(props) {
                                     </Button>
                                 </Link>
                             ))}
+                            <div className='inline'>
+                                {
+                                    user ? <Button sx={{ color: '#fff' }} onClick={handleUserBtn} className='group relative'>
+                                        <img src={user?.photoURL} alt={user.displayName} className='w-10 rounded-full h-10' rel="no-referrer" />
+                                        <div className={`absolute -right-5 top-12 bg-white group-hover:block hidden`}>
+                                            <Button sx={{ color: '#fff' }} className='whitespace-nowrap' style={{ color: "black", fontWeight: "bold" }} onClick={handleLogout} >
+                                                Log Out
+                                            </Button>
+                                        </div>
+                                    </Button> :
+                                        <Link to="/login">
+                                            <Button sx={{ color: '#fff' }}>
+                                                login
+                                            </Button>
+                                        </Link>
+                                }
+                            </div>
                         </Box>
                     </Toolbar>
                 </div>
