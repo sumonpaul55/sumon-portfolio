@@ -72,8 +72,8 @@ const Banner = () => {
                                         <button onClick={(e) => hadleDownload(e, user)} className='px-4 lg:px-0 font-semibold lg:min-w-[200px] hover:bg-pink-800 duration-200 rounded-md bg-pink-600 py-1 md:py mt-5-2'>
                                             <a href={loggedIn ? resume : ""} download={loggedIn ? true : false}>Download Resume</a>
                                         </button>
-                                        <button onClick={(e) => hadleDownload(e, user)} className='px-4 lg:px-0 font-semibold lg:min-w-[200px] hover:bg-pink-800 duration-200 rounded-md bg-pink-600 py-1 md:py mt-5-2'>
-                                            <a href={"https://drive.google.com/file/d/17RveTVaFmyA6dtJKwrPjYOUwBXCIVjyE/view?usp=sharing"} target='_blank' rel="noreferrer">View Resume</a>
+                                        <button className='px-4 lg:px-0 font-semibold lg:min-w-[200px] hover:bg-pink-800 duration-200 rounded-md bg-pink-600 py-1 md:py mt-5-2'>
+                                            <a href="https://drive.google.com/file/d/17RveTVaFmyA6dtJKwrPjYOUwBXCIVjyE/view?usp=sharing" target='_blank' rel="noreferrer">View Resume</a>
                                         </button>
                                     </div>
                                 </div>
