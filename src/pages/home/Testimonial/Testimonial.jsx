@@ -41,7 +41,7 @@ export default class Testimonial extends Component {
         return (
             <>
 
-                <section className="py-20 bg-slate-700 px-4">
+                <section className="py-20 bg-slate-900 px-4">
                     <div className="container mx-auto">
                         <div className="px-2 md:px-0">
                             <h1 className='text-white font-bold mt-5 font-sans text-2xl md:text-3xl lg:text-4xl border-b w-fit pb-2 border-dashed'>Testimonial</h1>
@@ -61,7 +61,7 @@ export default class Testimonial extends Component {
                                         <img className="w-20 rounded-full border-4 mx-auto" src={testi1} alt="jon doe" />
                                         <h2 className="text-xl font-bold pt-3">Emily Foster</h2>
                                         <span className="text-sm text-lime-500 font-bold">AI Specialist</span>
-                                        <p className="mt-5">Sumon Paul is front-end development skills are outstanding. He transformed our design vision into a visually impressive and responsive website. With excellent attention to detail and clear communication, Sumon made the entire process seamless. I highly recommend him for any web development project.</p>
+                                        <p className="mt-5 line-clamp-5">Sumon Paul is front-end development skills are outstanding. He transformed our design vision into a visually impressive and responsive website. With excellent attention to detail and clear communication, Sumon made the entire process seamless. I highly recommend him for any web development project.</p>
                                     </div>
                                 </div>
                                 <div className="">
@@ -69,7 +69,7 @@ export default class Testimonial extends Component {
                                         <img className="w-20 rounded-full border-4 mx-auto" src={testi2} alt="jon doe" />
                                         <h2 className="text-xl font-bold pt-3">Kevin Lee</h2>
                                         <span className="text-sm text-lime-500 font-bold">IT Support Specialist</span>
-                                        <p className="mt-5">Sumon Paul is a top-notch front-end developer. His ability to translate design concepts into polished, responsive websites is truly impressive. With a keen eye for detail and effective communication, Sumon delivered exceptional results. I highly recommend him for any web development needs.</p>
+                                        <p className="mt-5 line-clamp-5">Sumon Paul is a top-notch front-end developer. His ability to translate design concepts into polished, responsive websites is truly impressive. With a keen eye for detail and effective communication, Sumon delivered exceptional results. I highly recommend him for any web development needs.</p>
                                     </div>
                                 </div>
                                 <div className="">
@@ -77,7 +77,7 @@ export default class Testimonial extends Component {
                                         <img className="w-20 rounded-full border-4 mx-auto" src={testi3} alt="jon doe" />
                                         <h2 className="text-xl font-bold pt-3">Tanbirul Zihad</h2>
                                         <span className="text-sm text-lime-500 font-bold">Content Writter</span>
-                                        <p className="mt-5">Sumon Paul is an exceptional front-end developer. His proficiency in turning design ideas into visually striking, responsive websites is commendable. With a keen eye for detail and effective communication, Sumon delivered impressive results. Highly recommended for any web development project.</p>
+                                        <p className="mt-5 line-clamp-5">Sumon Paul is an exceptional front-end developer. His proficiency in turning design ideas into visually striking, responsive websites is commendable. With a keen eye for detail and effective communication, Sumon delivered impressive results. Highly recommended for any web development project.</p>
                                     </div>
                                 </div>
                                 <div className="">
@@ -85,7 +85,7 @@ export default class Testimonial extends Component {
                                         <img className="w-20 rounded-full border-4 mx-auto" src={jondoe} alt="jon doe" />
                                         <h2 className="text-xl font-bold pt-3">Ashiqur Rahman</h2>
                                         <span className="text-sm text-lime-500 font-bold">CEO of Fluresta & Hostflue</span>
-                                        <p className="mt-5">Sumon Paul's front-end development expertise is outstanding. He seamlessly brought our design vision to life with precision and creativity. His attention to detail, timely communication, and commitment to quality make him a standout choice for any web development project. Highly recommended.</p>
+                                        <p className="mt-5 line-clamp-5">Sumon Paul's front-end development expertise is outstanding. He seamlessly brought our design vision to life with precision and creativity. His attention to detail, timely communication, and commitment to quality make him a standout choice for any web development project. Highly recommended.</p>
                                     </div>
                                 </div>
                             </Slider>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import logo from "../../assets/logo.png"
 const Footer = () => {
     return (
-        <footer className='py-32 bg-slate-900 px-2'>
+        <footer className='pt-32 bg-slate-900 px-2'>
             <div className="container mx-auto">
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-14'>
                     <div>

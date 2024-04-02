@@ -3,7 +3,7 @@ import sumon from "../../../assets/sumon.png"
 import "./about.css"
 const AboutmeSection = () => {
     return (
-        <section className='py-20 bg-slate-700'>
+        <section className='py-20 bg-slate-900'>
             <div className="container mx-auto">
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-7'>
                     <div className='text-center flex justify-center order-1 md:order-none overflow-hidden' data-aos="fade-right">

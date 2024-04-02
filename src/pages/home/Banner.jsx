@@ -4,12 +4,12 @@ import me from "../../assets/me.png"
 import resume from "../../assets/resume.pdf"
 import { TypeAnimation } from 'react-type-animation';
 import useAuth from '../../hooks/useAuth';
-import Swal from 'sweetalert2';
-import { useNavigate } from 'react-router-dom';
+// import Swal from 'sweetalert2';
+// import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
 
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     const { user } = useAuth()
     const [loggedIn, setLoggedIn] = useState(false)
     useEffect(() => {
@@ -18,31 +18,29 @@ const Banner = () => {
         }
     }, [user])
 
-
-    const hadleDownload = (e, user) => {
-        if (!user) {
-            e.preventDefault()
-            Swal.fire({
-                title: "You are not logged in",
-                text: "You have to login first, Please login!",
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: "Yes, Login"
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    navigate("/login")
-                }
-            });
-        }
-
-    }
+    // const hadleDownload = (e, user) => {
+    //     if (!user) {
+    //         e.preventDefault()
+    //         Swal.fire({
+    //             title: "You are not logged in",
+    //             text: "You have to login first, Please login!",
+    //             icon: "warning",
+    //             showCancelButton: true,
+    //             confirmButtonColor: "#3085d6",
+    //             cancelButtonColor: "#d33",
+    //             confirmButtonText: "Yes, Login"
+    //         }).then((result) => {
+    //             if (result.isConfirmed) {
+    //                 navigate("/login")
+    //             }
+    //         });
+    //     }
+    // }
 
 
     // console.log(user)
     return (
-        <section className='bg-slate-800 text-white py-14'>
+        <section className='bg-slate-800 text-white py-20'>
             <Container>
                 <Box>
                     <div className='flex flex-col md:flex-row md:items-center gap-16 md:gap-5'>
@@ -69,11 +67,11 @@ const Banner = () => {
                                     <div className='mt-2 mb-5 border-slate-600 border max-w-[200px] mx-auto md:mx-0'></div>
                                     <p className='max-w-[400px] mx-auto md:mx-0 text-start'>As a React.js front-end developer, I excel in crafting dynamic websites with a keen emphasis on efficiency and a seamless user experience.</p>
                                     <div className='flex gap-4 md:gap-10 mt-5 justify-center md:justify-start'>
-                                        <button onClick={(e) => hadleDownload(e, user)} className='px-4 lg:px-0 font-semibold lg:min-w-[200px] hover:bg-pink-800 duration-200 rounded-md bg-pink-600 py-1 md:py mt-5-2'>
-                                            <a href={loggedIn ? resume : ""} download={loggedIn ? true : false}>Download Resume</a>
+                                        <button className='px-4 lg:px-0 font-semibold lg:min-w-[200px] hover:bg-pink-800 duration-200 rounded-md bg-pink-600 py-1 md:py mt-5-2'>
+                                            <a href={resume} download={loggedIn ? true : false}>Download Resume</a>
                                         </button>
                                         <button className='px-4 lg:px-0 font-semibold lg:min-w-[200px] hover:bg-pink-800 duration-200 rounded-md bg-pink-600 py-1 md:py mt-5-2'>
-                                            <a href="https://drive.google.com/file/d/17RveTVaFmyA6dtJKwrPjYOUwBXCIVjyE/view?usp=sharing" target='_blank' rel="noreferrer">View Resume</a>
+                                            <a href="https://drive.google.com/file/d/1VqVrwzQFTsdWNacGGz1FmDeFCr0_kg9J/view?usp=sharing" target='_blank' rel="noreferrer">View Resume</a>
                                         </button>
                                     </div>
                                 </div>
