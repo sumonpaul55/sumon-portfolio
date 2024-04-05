@@ -2,13 +2,13 @@
     {
         "id": 1,
         "name": "HTML",
-        "img": "https://i.ibb.co/x685NGj/html.png",
+        "img": "https://i.ibb.co/kKhd8qf/html.png",
         "description": "Building the backbone of web content with semantic markup and structure."
     },
     {
         "id": 2,
         "name": "CSS",
-        "img": "https://i.ibb.co/MfMxzDg/css.png",
+        "img": "https://i.ibb.co/LhgDHKh/css.png",
         "description": "Styling and designing captivating user interfaces for a seamless web experience."
     },
     {
@@ -20,13 +20,13 @@
     {
         "id": 4,
         "name": "React",
-        "img": "https://i.ibb.co/SVYL8rd/react.png",
+        "img": "https://i.ibb.co/SKKrBXn/React-Symbol-removebg-preview.png",
         "description": "Crafting efficient and modular UI components for modern, responsive web applications."
     },
     {
         "id": 5,
         "name": "Next js",
-        "img": "https://i.ibb.co/5kfb4Fh/next-js.jpg",
+        "img": "https://i.ibb.co/Sd3ZQvX/next.png",
         "description": "Crafting efficient and modular UI components for modern, responsive web applications."
     },
     {
@@ -38,7 +38,7 @@
     {
         "id": 7,
         "name": "Tailwind",
-        "img": "https://i.ibb.co/FgTKqM5/tailwind.png",
+        "img": "https://i.ibb.co/SRkrXtB/tialwind.png",
         "description": "Streamlining UI development with utility-first CSS framework for a sleek and consistent design."
     },
     {
@@ -56,13 +56,13 @@
     {
         "id": 10,
         "name": "MongoDB",
-        "img": "https://i.ibb.co/XYTcW0Q/mongodb.png",
+        "img": "https://i.ibb.co/jLyDWfJ/mongodb.png",
         "description": "Managing data seamlessly in NoSQL databases, enabling flexible and scalable solutions."
     },
     {
         "id": 11,
         "name": "Mongoose",
-        "img": "https://i.ibb.co/rMsBBwm/mongoose.png",
+        "img": "https://i.ibb.co/LC15TYB/mongoose.png",
         "description": "Managing data seamlessly in NoSQL databases, enabling flexible and scalable solutions."
     },
     {
