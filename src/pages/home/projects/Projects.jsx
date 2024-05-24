@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import babycare from "../../../assets/projects/babycare.png"
 import hostflu from "../../../assets/projects/hostflu.png"
 import triptrove from "../../../assets/projects/triptrove.png"
-import electronics from "../../../assets/projects/electronics.png"
+// import electronics from "../../../assets/projects/electronics.png"
 import todos from "../../../assets/projects/taskmanagement.png"
 import library from "../../../assets/projects/library.png"
 import fcmd from "../../../assets/projects/fcmd.png"
@@ -116,20 +116,7 @@ export default class Projects extends Component {
                                     </a>
                                 </div>
                             </div>
-                            <div>
-                                <div className="relative mx-2 md:mx-4">
-                                    <a href="https://scp-electronics.web.app" target="_blank" rel="noreferrer">
-                                        <img src={electronics} alt="electronics" />
-                                        <h1 className="py-3 bg-slate-800 hover:top-0 bg-opacity-80 text-center text-white font-bold absolute bottom-0 w-full text-xl md:text-2xl">
-                                            <div className="flex flex-col justify-center items-center gap-2">
-                                                <span>Electronics</span>
-                                                <span><FaExternalLinkAlt size={20} /></span>
-                                                <span className="text-base">Electronics</span>
-                                            </div>
-                                        </h1>
-                                    </a>
-                                </div>
-                            </div>
+
                             <div>
                                 <div className="relative mx-2 md:mx-4">
                                     <a href="https://task-managemet.web.app" target="_blank" rel="noreferrer">
