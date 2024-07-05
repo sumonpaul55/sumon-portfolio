@@ -41,7 +41,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div>
-                            <form onSubmit={sendEmail} className='max-w-[500px] space-y-5 text-white' ref={form}>
+                            <form onSubmit={sendEmail} className='max-w-[500px] space-y-5' ref={form}>
                                 <div className='flex gap-2 justify-between'>
                                     <div>
                                         <label htmlFor="">Name</label>
