@@ -41,11 +41,11 @@ const Contact = () => {
                             </div>
                         </div>
                         <div>
-                            <form onSubmit={sendEmail} className='max-w-[500px] space-y-5' ref={form}>
+                            <form onSubmit={sendEmail} className='max-w-[500px] space-y-5 text-white' ref={form}>
                                 <div className='flex gap-2 justify-between'>
                                     <div>
                                         <label htmlFor="">Name</label>
-                                        <input type="text" name='name' required placeholder='Name' className='w-full rounded-md py-1 px-3 outline-0 ' />
+                                        <input type="text" name='name' required placeholder='Name' className='w-full text-black rounded-md py-1 px-3 outline-0 ' />
                                     </div>
                                     <div>
                                         <label htmlFor="">Email</label>
