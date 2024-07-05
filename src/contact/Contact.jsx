@@ -8,16 +8,18 @@ const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_s6k37ie', 'template_zsme3ms', form.current, "ymHlpPw1QxjqgRYGw")
+        emailjs.sendForm('service_j6jhl8n', 'template_zsme3ms', form.current, "ymHlpPw1QxjqgRYGw")
             .then((result) => {
                 if (result.status === 200) {
-                    Swal.fire(`Thank You so much, I will reach you as soon as possible`, {
+                    Swal.fire({
+                        title: `Thank You so much, I will reach you as soon as possible`,
                         icon: "success",
-                        position: "top-right"
+                        position: "center",
                     })
                 }
             }, (error) => {
-                Swal.fire(`${error.text}`, {
+                Swal.fire({
+                    title: error.text,
                     position: "top-right"
                 })
             });
@@ -25,16 +27,16 @@ const Contact = () => {
     return (
         <>
             <MyHelmet title="Contact me"></MyHelmet>
-            <main className='min-h-screen bg-slate-600 py-32'>
+            <main className='bg-slate-600 md:py-32 py-2 text-sm md:text-inherit'>
                 <div className="container mx-auto">
-                    <div className='grid grid-cols-1 gap-10 md:grid-cols-2 items-center mt-10'>
-                        <div>
+                    <div className='flex flex-col-reverse gap-10 items-center justify-center px-3 mt-10'>
+                        <div className=''>
                             <div className=''>
                                 <Player
                                     autoplay
                                     loop
                                     src={contactAnimation}
-                                    style={{ height: '400px', width: '400px' }}
+                                    style={{ height: '300px', width: '300px' }}
                                 >
                                     {/* <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} /> */}
                                 </Player>
@@ -60,7 +62,7 @@ const Contact = () => {
                                     <label htmlFor="">Message</label>
                                     <textarea name="massage" placeholder='Message' id="" rows="3" className='w-full p-3 text-black outline-0 rounded-lg'></textarea>
                                 </div>
-                                <input type="submit" className='text-white py-1 cursor-pointer hover:bg-indigo-950 text-center rounded-md px-4 bg-indigo-800 ' />
+                                <input type="submit" className='text-white py-1 cursor-pointer hover:bg-indigo-950 text-center rounded-md px-4 border text-lg w-full' />
                             </form>
                         </div>
                     </div>
